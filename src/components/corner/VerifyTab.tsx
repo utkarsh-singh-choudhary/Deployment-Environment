@@ -157,32 +157,7 @@ export default function VerifyTab() {
         </div>
       )}
 
-      {/* Show generated docs hint */}
-      {hasAnyDocs && !searched && (
-        <div className="mb-10 p-6 rounded-xl border border-gold/5 bg-surface/20">
-          <p className="text-xs text-muted text-center mb-3">
-            {allCerts.length > 0 && `${allCerts.length} certificate(s) available`}
-            {allCerts.length > 0 && allOffers.length > 0 && ' · '}
-            {allOffers.length > 0 && `${allOffers.length} offer letter(s) available`}
-          </p>
-          <div className="flex flex-wrap justify-center gap-2">
-            {[...allCerts.slice(-3), ...allOffers.slice(-3)].map((docId) => (
-              <button
-                key={docId}
-                onClick={() => {
-                  setId(docId);
-                  setVerifyType(docId.startsWith('OFF-') ? 'offer' : 'certificate');
-                }}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-[11px] text-gold border border-gold/20 rounded-full hover:bg-gold/10 transition-colors"
-                data-hover
-              >
-                {docId.startsWith('OFF-') ? <FileText size={10} /> : <Award size={10} />}
-                {docId}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
+      
 
       <AnimatePresence mode="wait">
         {searched && hasResult && (
