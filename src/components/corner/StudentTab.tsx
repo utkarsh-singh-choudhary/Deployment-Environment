@@ -104,7 +104,7 @@ export default function StudentTab() {
         _captcha: 'false',
       };
 
-      const response = await fetch('https://formsubmit.co/ajax/tanishkasharma718@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/choudharyutk@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
