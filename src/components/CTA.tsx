@@ -19,7 +19,7 @@ export default function CTA() {
     setErrorMsg('');
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/choudharyutk@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/tanishkasharma718@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
