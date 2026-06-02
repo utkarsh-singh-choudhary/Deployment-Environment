@@ -128,13 +128,7 @@ export default function VerifyTab() {
         </div>
       </form>
 
-      {/* ID format hint */}
-      <div className="flex justify-center mb-10">
-        <div className="inline-flex items-center gap-2 text-[10px] text-muted/60 tracking-wider">
-          <span>ID format:</span>
-          <code className="px-2 py-0.5 rounded bg-gold/5 border border-gold/10 text-gold/60">{verifyType === 'certificate' ? 'AUR-YYYY-NNN' : 'OFF-YYYY-NNN'}</code>
-        </div>
-      </div>
+      
 
       {/* Sample IDs to try */}
       {!hasAnyDocs && !searched && (
